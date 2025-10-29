@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family:  "DM Serif Text", serif;;
+}
+
+header {
+    background-color: #d8d8c0;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.logojk {
+    width: 35rem;
+    height: auto;
+}
+
+.ul-list {
+    display: flex;
+    gap: 15px;
+
+}
+
+.ul-list a {
+    text-decoration: none;
+    color: black;
+}
+
+.section-01 {
+    background-image: url(imagem/dektop.png);
+    background-size: cover;
+    background-position: top;
+    padding: 13rem;
+} 
+
+@media screen and (max-width: 480px) {
+    header {
+        background-color: aqua;
+    } 
+    
+}
+
+@media (max-width:500px) {
+section {
+    background-image: url(imagem/dektop.png);
+    padding: 10rem;
+}
+ nav {
+    display: none
+    ;
+ }    
+}
