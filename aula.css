@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family:  "DM Serif Text", serif;;
+    font-family: "DM Serif Text", serif;
+    ;
 }
 
 header {
@@ -38,22 +39,271 @@ header {
     background-size: cover;
     background-position: top;
     padding: 13rem;
-} 
+}
 
+
+.section-02 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    /* poderiamos usa 20px */
+    padding: 9rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+   
+
+
+
+}
+
+.caixa {
+
+    background-color: #35504cc9;
+    /*cor de fundo da caixa */
+    color: white;
+    /*cor da letra */
+    font-size: 1.2rem;
+    /*tamanho da letra */
+    width: 25%;
+    /*largura de todas as caixas de porcentagem*/
+
+    /* largura de todas as caixas em porcetagem */
+    height: 17rem;
+    /*altura da caixa */
+    box-shadow: 10px 10px 20px rgb(88, 88, 84);
+    /*sombra da caixa */
+    min-width: 300px;
+    /*largura minima da caixa evita que fique muito pequeno */
+    transition: 0.8s;
+    /*transição para o hover */
+    cursor: pointer;
+    /*ativar cursor do mouse */
+    padding: 1rem;
+    /*atribuindo um preenchimento interno*/
+
+
+
+}
+
+.pai-caixas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+
+
+}
+
+.caixa-icons i {
+    /* icones são tratados como textos para estilização  */
+    color: rgb(0, 0, 0);
+    /* alterei a cor do icone */
+    font-size: 2rem;
+    /*aumentei o tamanho  do icone */
+    margin-top: 1rem;
+    /*espaçamento superior */
+    margin-bottom: 0.8rem;
+    /*espaçamento inferior */
+}
+
+/* chamei a div dos icones para centralizar os mesmos  */
+
+.caixa-icons {
+    text-align: center;
+    /*alinhamento dos icones ao centro */
+}
+
+/* estilização do paragrafo  */
+.texto-caixa p {
+
+    font-size: 1.2rem;
+    /*tamanho da letra */
+    margin-bottom: 0.8rem;
+    /*espaçamento inferior */
+
+
+}
+
+/* estilização do botão  */
+.texto-caixa button {
+
+    width: 8rem;
+    /*largura */
+    background-color: blue;
+    /*cor de fundo */
+    color: white;
+    /*cor da letra*/
+    border: none;
+    /*removendo a borda padrão */
+    padding: 0.5rem;
+    /*preenchimento interno do botão*/
+
+
+}
+
+.texto-caixa {
+    text-align: center;/* alinhamento dos itens (podemos usar o flebox tbm ) */
+}
+.Text-content h3{
+    /* estamos chamando p titulo da sessão  */
+font-size: 2rem;/*tamanho da fonte */
+font-weight: 800;/*peso da fonte */
+text-transform: uppercase;/*tornando o texto em caixa alta */
+margin-bottom: 2rem;/*margem inferior do titulo */
+}
+.Text-content P {
+
+    color: rgb(66, 58, 58);
+    text-align: center;
+    font-size: 1.2rem;
+
+
+
+
+
+}
 @media screen and (max-width: 480px) {
     header {
-        background-color: aqua;
-    } 
-    
+        background-color: rgba(82, 110, 89, 0.671);
+    }
+
 }
 
 @media (max-width:500px) {
-section {
-    background-image: url(imagem/dektop.png);
-    padding: 10rem;
+    .section-01 {
+        background-image: url(imagem/dektop.png);
+        padding: 10rem;
+    }
+
+    nav {
+        display: none;
+    }
 }
- nav {
-    display: none
-    ;
- }    
+.section-03  {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    /* poderiamos usa 20px */
+    padding: 9rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+
+
+
+}
+
+.caixa-01 {
+
+    background-color: #35504cc9;
+    /*cor de fundo da caixa */
+    color: white;
+    /*cor da letra */
+    font-size: 1.2rem;
+    /*tamanho da letra */
+    width: 25%;
+    /*largura de todas as caixas de porcentagem*/
+
+    /* largura de todas as caixas em porcetagem */
+    height: 17rem;
+    /*altura da caixa */
+    box-shadow: 10px 10px 20px rgb(88, 88, 84);
+    /*sombra da caixa */
+    min-width: 300px;
+    /*largura minima da caixa evita que fique muito pequeno */
+    transition: 0.8s;
+    /*transição para o hover */
+    cursor: pointer;
+    /*ativar cursor do mouse */
+    padding: 1rem;
+    /*atribuindo um preenchimento interno*/
+
+
+
+}
+
+.pai-caixas-01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+
+
+}
+
+.caixa-icons i {
+    /* icones são tratados como textos para estilização  */
+    color: rgb(0, 0, 0);
+    /* alterei a cor do icone */
+    font-size: 2rem;
+    /*aumentei o tamanho  do icone */
+    margin-top: 1rem;
+    /*espaçamento superior */
+    margin-bottom: 0.8rem;
+    /*espaçamento inferior */
+}
+
+/* chamei a div dos icones para centralizar os mesmos  */
+
+.caixa-icons {
+    text-align: center;
+    /*alinhamento dos icones ao centro */
+}
+
+/* estilização do paragrafo  */
+.texto-caixa p {
+
+    font-size: 1.2rem;
+    /*tamanho da letra */
+    margin-bottom: 0.8rem;
+    /*espaçamento inferior */
+
+
+}
+
+/* estilização do botão  */
+.texto-caixa button {
+
+    width: 8rem;
+    /*largura */
+    background-color: blue;
+    /*cor de fundo */
+    color: white;
+    /*cor da letra*/
+    border: none;
+    /*removendo a borda padrão */
+    padding: 0.5rem;
+    /*preenchimento interno do botão*/
+
+
+}
+
+.texto-caixa {
+    text-align: center;/* alinhamento dos itens (podemos usar o flebox tbm ) */
+}
+.Text-content h3{
+    /* estamos chamando p titulo da sessão  */
+font-size: 2rem;/*tamanho da fonte */
+font-weight: 800;/*peso da fonte */
+text-transform: uppercase;/*tornando o texto em caixa alta */
+margin-bottom: 2rem;/*margem inferior do titulo */
+}
+.Text-content P {
+
+    color: rgb(66, 58, 58);
+    text-align: center;
+    font-size: 1.2rem;
+
+
+
+
+
 }
