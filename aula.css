@@ -5,6 +5,13 @@
     font-family: "DM Serif Text", serif;
     ;
 }
+body{
+background-color: #c0c0c0;
+
+
+
+
+}
 
 header {
     background-color: #d8d8c0;
@@ -60,7 +67,7 @@ header {
 
 .caixa {
 
-    background-color: #35504cc9;
+    background-color:#948989;
     /*cor de fundo da caixa */
     color: white;
     /*cor da letra */
@@ -201,7 +208,7 @@ margin-bottom: 2rem;/*margem inferior do titulo */
 
 .caixa-01 {
 
-    background-color: #35504cc9;
+    background-color:#948989;
     /*cor de fundo da caixa */
     color: white;
     /*cor da letra */
@@ -302,6 +309,121 @@ margin-bottom: 2rem;/*margem inferior do titulo */
     text-align: center;
     font-size: 1.2rem;
 
+
+
+
+
+}
+.button-01{
+
+background-color: rgb(112, 119, 119);
+font-size: 2rem;
+padding: 1rem;
+
+
+
+}
+.SUMMIT{
+background-color: rgb(112, 119, 119);
+font-size: 2rem;
+padding: 2rem;
+
+
+
+
+
+}
+h2{
+
+font-size:2rem;
+
+
+}
+#texto-01{
+
+ color: rgb(66, 58, 58);
+    text-align: center;
+    font-size: 1.2rem;
+
+
+}
+#texto-02{
+ color: rgb(66, 58, 58);
+    text-align: center;
+    font-size: 1.2rem;
+
+
+
+
+}
+#texto-03{
+
+color: rgb(66, 58, 58);
+    text-align: center;
+    font-size: 1.2rem;
+
+
+
+}
+.section-04 i{
+
+ 
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+    
+   
+    
+
+
+
+
+
+}
+.footer{
+
+background-color: #807373;
+
+
+
+
+
+}
+h3{
+color: rgb(14, 14, 14);
+    text-align: center;
+    font-size: 1.2rem;
+
+
+
+
+
+}
+#INSTA{
+color: rgb(14, 14, 14);
+    text-align: center;
+    font-size: 1.2rem;
+
+
+
+
+
+}
+#FACEBOOK{
+color: rgb(14, 14, 14);
+    text-align: center;
+    font-size: 1.2rem;
+
+
+
+
+}
+footer i{
+ color: rgb(0, 0, 0);
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
 
 
 
