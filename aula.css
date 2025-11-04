@@ -236,7 +236,49 @@ margin-bottom: 2rem;/*margem inferior do titulo */
 
 
 }
+.caixa-02{
+   background-color:#948989;
+    /*cor de fundo da caixa */
+    color: white;
+    /*cor da letra */
+    font-size: 1.2rem;
+    /*tamanho da letra */
+    width: 25%;
+    /*largura de todas as caixas de porcentagem*/
 
+    /* largura de todas as caixas em porcetagem */
+    height: 17rem;
+    /*altura da caixa */
+    box-shadow: 10px 10px 20px rgb(88, 88, 84);
+    /*sombra da caixa */
+    min-width: 300px;
+    /*largura minima da caixa evita que fique muito pequeno */
+    transition: 0.8s;
+    /*transição para o hover */
+    cursor: pointer;
+    /*ativar cursor do mouse */
+    padding: 1rem;
+    /*atribuindo um preenchimento interno*/
+
+
+
+
+
+}
+
+
+
+
+
+.caixa-02{
+background-image: url(imagem/JK.jpg);
+background-size: cover;
+background-position: top;
+
+
+
+
+}
 .pai-caixas-01 {
     display: flex;
     justify-content: center;
@@ -438,6 +480,7 @@ color: rgb(14, 14, 14);
 
 
 }
+
 .footer{
 
 background-color: #807373;
