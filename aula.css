@@ -26,7 +26,7 @@ header {
 }
 
 .logojk {
-    width: 35rem;
+    width: 8rem;
     height: auto;
 }
 
@@ -51,6 +51,7 @@ header {
 
 .section-02 {
 
+  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,6 +162,7 @@ font-size: 2rem;/*tamanho da fonte */
 font-weight: 800;/*peso da fonte */
 text-transform: uppercase;/*tornando o texto em caixa alta */
 margin-bottom: 2rem;/*margem inferior do titulo */
+
 }
 .Text-content P {
 
@@ -175,7 +177,7 @@ margin-bottom: 2rem;/*margem inferior do titulo */
 }
 @media screen and (max-width: 480px) {
     header {
-        background-color: rgba(82, 110, 89, 0.671);
+        background-color: rgba(126, 109, 108, 0.904);
     }
 
 }
@@ -191,7 +193,7 @@ margin-bottom: 2rem;/*margem inferior do titulo */
     }
 }
 .section-03  {
-
+   background-color: #4b4444;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -307,7 +309,7 @@ margin-bottom: 2rem;/*margem inferior do titulo */
 
     color: rgb(66, 58, 58);
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 2rem;
 
 
 
@@ -316,18 +318,68 @@ margin-bottom: 2rem;/*margem inferior do titulo */
 }
 .button-01{
 
-background-color: rgb(112, 119, 119);
-font-size: 2rem;
-padding: 1rem;
+  width: 20rem;
+    background-color: #8a8989;
+    border: none;
+    padding: 0.5rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+
+
+
+}
+.button-div{
+
+display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+padding: 2rem;
+
+
+
+}
+.button-div01{
+display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+padding: 2rem;
+height: 0.5rem;
+
 
 
 
 }
 .SUMMIT{
-background-color: rgb(112, 119, 119);
-font-size: 2rem;
-padding: 2rem;
+ 
+    background-color: #8a8989;
+    border: none;
+    padding: 0.5rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
 
+
+
+
+
+}
+.icones{
+
+ display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+
+
+
+}
+.icones2{
+display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
 
 
 
@@ -335,7 +387,12 @@ padding: 2rem;
 }
 h2{
 
-font-size:2rem;
+
+color: rgb(14, 14, 14);
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+      
 
 
 }
@@ -358,10 +415,10 @@ font-size:2rem;
 }
 #texto-03{
 
-color: rgb(66, 58, 58);
+    color: rgb(66, 58, 58);
     text-align: center;
     font-size: 1.2rem;
-
+    
 
 
 }
@@ -390,6 +447,7 @@ background-color: #807373;
 
 
 }
+
 h3{
 color: rgb(14, 14, 14);
     text-align: center;
