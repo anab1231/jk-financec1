@@ -363,7 +363,7 @@ margin-bottom: 2rem;/*margem inferior do titulo */
   width: 20rem;
     background-color: #8a8989;
     border: none;
-    padding: 0.5rem;
+    padding: 1rem;
     color: rgb(0, 0, 0);
     text-align: center;
 
@@ -377,7 +377,8 @@ display: flex;
 justify-content: center;
 text-align: center;
 align-items: center;
-padding: 2rem;
+padding: 3rem;
+border: none;
 
 
 
@@ -387,26 +388,16 @@ display: flex;
 justify-content: center;
 text-align: center;
 align-items: center;
-padding: 2rem;
-height: 0.5rem;
+padding: 1rem;
+border: none;
 
-
-
-
-}
-.SUMMIT{
- 
-    background-color: #8a8989;
-    border: none;
-    padding: 0.5rem;
-    color: rgb(0, 0, 0);
-    text-align: center;
 
 
 
 
 
 }
+
 .icones{
 
  display: flex;
@@ -440,16 +431,16 @@ color: rgb(14, 14, 14);
 }
 #texto-01{
 
- color: rgb(66, 58, 58);
+  color: rgb(68, 48, 48);
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 
 
 }
 #texto-02{
- color: rgb(66, 58, 58);
+ color: rgb(68, 48, 48);
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 
 
 
@@ -457,7 +448,7 @@ color: rgb(14, 14, 14);
 }
 #texto-03{
 
-    color: rgb(66, 58, 58);
+    color: rgba(0, 0, 0, 0.74);
     text-align: center;
     font-size: 1.2rem;
     
@@ -467,7 +458,7 @@ color: rgb(14, 14, 14);
 .section-04 i{
 
  
-    color: rgb(0, 0, 0);
+  
     font-size: 2rem;
     margin-top: 1rem;
     margin-bottom: 0.8rem;
@@ -480,53 +471,80 @@ color: rgb(14, 14, 14);
 
 
 }
+.imput-email{
 
-.footer{
+ text-align: center;
+padding: 0.8rem;
+width: 23rem;
+background-color: #473030b2;
 
-background-color: #807373;
-
+border: none;
+margin: 1.5rem;
 
 
 
 
 }
+.SUMMIT{
+text-align: center;
+padding: 0.8rem;
+width: 8rem;
+background-color: #473535a6;
+border: none;
+margin: 1.5rem;
 
-h3{
-color: rgb(14, 14, 14);
+
+
+}
+
+
+
+
+
+
+
+
+footer {
+    height: 24rem;
+    background-color: #333333;
+}
+
+.listas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
     text-align: center;
-    font-size: 1.2rem;
-
-
-
-
-
+    color: white;
 }
-#INSTA{
-color: rgb(14, 14, 14);
-    text-align: center;
-    font-size: 1.2rem;
 
-
-
-
-
+.listas ul {
+    margin-top: 6rem;
 }
-#FACEBOOK{
-color: rgb(14, 14, 14);
-    text-align: center;
-    font-size: 1.2rem;
 
-
-
-
-}
-footer i{
- color: rgb(0, 0, 0);
-    font-size: 2rem;
+.listas ul li{
     margin-top: 1rem;
-    margin-bottom: 0.8rem;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+}
 
+hr {
+    border: solid 1px;
+    width: 60%;
+    color: #ffffff;
+    margin-left: 20%;
+    margin-top: 2rem;
+}
 
+.icones-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+    color: white;
+}
 
-
+.icones-footer i {
+    font-size: 2.4rem;
 }
