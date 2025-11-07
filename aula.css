@@ -3,12 +3,8 @@
     padding: 0;
     list-style: none;
     font-family: "DM Serif Text", serif;
-    ;
+    
 }
-
-
-
-
 header {
     background-color: #d8d8c0;
     padding: 2rem;
@@ -28,7 +24,7 @@ header {
 
 .ul-list {
     display: flex;
-    gap: 15px;
+    gap: 10px;
 
 
 }
@@ -172,21 +168,14 @@ margin-bottom: 2rem;/*margem inferior do titulo */
 
 
 }
-@media  (max-width: 480px) {
+@media  (max-width: 500px) {
     header {
         background-color: rgba(80, 63, 62, 0.904);
-    
-     
     }
-    .ul-list {
-    display: flex;
-    gap: 15px;
-
-
 }
 
 
-}
+
 
 @media (max-width:500px) {
     .section-01 {
@@ -370,7 +359,6 @@ margin-bottom: 2rem;/*margem inferior do titulo */
     background-color: #8a8989;
     border: none;
     padding: 1rem;
-    color: rgb(0, 0, 0);
     text-align: center;
 
 
@@ -453,20 +441,9 @@ color: rgb(14, 14, 14);
 
 }
 .section-04 i{
-
- 
-  
     font-size: 2rem;
     margin-top: 1rem;
     margin-bottom: 0.8rem;
-    
-   
-    
-
-
-
-
-
 }
 .imput-email{
 
@@ -474,8 +451,8 @@ color: rgb(14, 14, 14);
 padding: 0.8rem;
 width: 23rem;
 background-color: #473030b2;
-
 border: none;
+color: #000000;
 margin: 1.5rem;
 
 
@@ -489,21 +466,14 @@ width: 8rem;
 background-color: #473535a6;
 border: none;
 margin: 1.5rem;
-
-
-
 }
-
-
-
-
-
-
-
 
 footer {
     height: 24rem;
-    background-color: #333333;
+    background-color: #7e7373;
+      display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .listas {
@@ -512,8 +482,8 @@ footer {
     align-items: center;
     gap: 4rem;
     text-align: center;
-    color: white;
-  flex-wrap: wrap;
+    color: rgb(255, 249, 249);
+
 }
 
 .listas ul {
@@ -524,7 +494,7 @@ footer {
 .listas ul li{
     margin-top: 1rem;
     padding: 0.2rem;
-   flex-wrap: wrap;
+  
    
 }
 
