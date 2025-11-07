@@ -5,13 +5,9 @@
     font-family: "DM Serif Text", serif;
     ;
 }
-body{
-background-color: #c0c0c0;
 
 
 
-
-}
 
 header {
     background-color: #d8d8c0;
@@ -33,6 +29,7 @@ header {
 .ul-list {
     display: flex;
     gap: 15px;
+
 
 }
 
@@ -175,16 +172,25 @@ margin-bottom: 2rem;/*margem inferior do titulo */
 
 
 }
-@media screen and (max-width: 480px) {
+@media  (max-width: 480px) {
     header {
-        background-color: rgba(126, 109, 108, 0.904);
+        background-color: rgba(80, 63, 62, 0.904);
+    
+     
     }
+    .ul-list {
+    display: flex;
+    gap: 15px;
+
+
+}
+
 
 }
 
 @media (max-width:500px) {
     .section-01 {
-        background-image: url(imagem/dektop.png);
+        background-image: url(imagem/mobile.jpg);
         padding: 10rem;
     }
 
@@ -437,15 +443,6 @@ color: rgb(14, 14, 14);
 
 
 }
-#texto-02{
- color: rgb(68, 48, 48);
-    text-align: center;
-    font-size: 1.5rem;
-
-
-
-
-}
 #texto-03{
 
     color: rgba(0, 0, 0, 0.74);
@@ -516,16 +513,19 @@ footer {
     gap: 4rem;
     text-align: center;
     color: white;
+  flex-wrap: wrap;
 }
 
 .listas ul {
     margin-top: 6rem;
+    
 }
 
 .listas ul li{
     margin-top: 1rem;
     padding: 0.2rem;
-    font-size: 1.2rem;
+   flex-wrap: wrap;
+   
 }
 
 hr {
@@ -542,7 +542,7 @@ hr {
     align-items: center;
     margin-top: 2rem;
     gap: 1rem;
-    color: white;
+    color: white; 
 }
 
 .icones-footer i {
