@@ -3,28 +3,34 @@
     padding: 0;
     list-style: none;
     font-family: "DM Serif Text", serif;
-    
+
 }
+
 header {
+
     background-color: #d8d8c0;
     padding: 2rem;
     display: flex;
+    justify-content: space-between;
+    /* separa logo e menu */
     align-items: center;
-    justify-content: space-evenly;
     position: sticky;
     left: 0;
     top: 0;
     z-index: 999;
+
+
 }
 
 .logojk {
-    width: 8rem;
+    width: 10rem;
     height: auto;
 }
 
 .ul-list {
     display: flex;
-    gap: 10px;
+    gap: 8rem;
+
 
 
 }
@@ -32,6 +38,7 @@ header {
 .ul-list a {
     text-decoration: none;
     color: black;
+
 }
 
 .section-01 {
@@ -44,7 +51,7 @@ header {
 
 .section-02 {
 
-  
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,7 +60,7 @@ header {
     padding: 9rem;
     flex-wrap: wrap;
     flex-direction: column;
-   
+
 
 
 
@@ -61,7 +68,7 @@ header {
 
 .caixa {
 
-    background-color:#948989;
+    background-color: #948989;
     /*cor de fundo da caixa */
     color: white;
     /*cor da letra */
@@ -147,16 +154,23 @@ header {
 }
 
 .texto-caixa {
-    text-align: center;/* alinhamento dos itens (podemos usar o flebox tbm ) */
+    text-align: center;
+    /* alinhamento dos itens (podemos usar o flebox tbm ) */
 }
-.Text-content h3{
+
+.Text-content h3 {
     /* estamos chamando p titulo da sessão  */
-font-size: 2rem;/*tamanho da fonte */
-font-weight: 800;/*peso da fonte */
-text-transform: uppercase;/*tornando o texto em caixa alta */
-margin-bottom: 2rem;/*margem inferior do titulo */
+    font-size: 2rem;
+    /*tamanho da fonte */
+    font-weight: 800;
+    /*peso da fonte */
+    text-transform: uppercase;
+    /*tornando o texto em caixa alta */
+    margin-bottom: 2rem;
+    /*margem inferior do titulo */
 
 }
+
 .Text-content P {
 
     color: rgb(66, 58, 58);
@@ -168,16 +182,16 @@ margin-bottom: 2rem;/*margem inferior do titulo */
 
 
 }
-@media  (max-width: 500px) {
+
+@media (max-width: 500px) {
     header {
         background-color: rgba(80, 63, 62, 0.904);
+        padding: 1rem;
     }
 }
 
-
-
-
 @media (max-width:500px) {
+
     .section-01 {
         background-image: url(imagem/mobile.jpg);
         padding: 10rem;
@@ -187,8 +201,9 @@ margin-bottom: 2rem;/*margem inferior do titulo */
         display: none;
     }
 }
-.section-03  {
-   background-color: #4b4444;
+
+.section-03 {
+    background-color: #4b4444;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -205,7 +220,7 @@ margin-bottom: 2rem;/*margem inferior do titulo */
 
 .caixa-01 {
 
-    background-color:#948989;
+    background-color: #948989;
     /*cor de fundo da caixa */
     color: white;
     /*cor da letra */
@@ -231,16 +246,15 @@ margin-bottom: 2rem;/*margem inferior do titulo */
 
 
 }
-.caixa-02{
-   background-color:#948989;
+
+.caixa-02 {
+    background-color: #948989;
     /*cor de fundo da caixa */
     color: white;
     /*cor da letra */
     font-size: 1.2rem;
     /*tamanho da letra */
     width: 25%;
-    /*largura de todas as caixas de porcentagem*/
-
     /* largura de todas as caixas em porcetagem */
     height: 17rem;
     /*altura da caixa */
@@ -254,26 +268,22 @@ margin-bottom: 2rem;/*margem inferior do titulo */
     /*ativar cursor do mouse */
     padding: 1rem;
     /*atribuindo um preenchimento interno*/
-
-
-
-
-
 }
 
 
 
 
 
-.caixa-02{
-background-image: url(imagem/JK.jpg);
-background-size: cover;
-background-position: top;
+.caixa-02 {
+    background-image: url(imagem/JK.jpg);
+    background-size: cover;
+    background-position: top;
 
 
 
 
 }
+
 .pai-caixas-01 {
     display: flex;
     justify-content: center;
@@ -333,15 +343,22 @@ background-position: top;
 }
 
 .texto-caixa {
-    text-align: center;/* alinhamento dos itens (podemos usar o flebox tbm ) */
+    text-align: center;
+    /* alinhamento dos itens (podemos usar o flebox tbm ) */
 }
-.Text-content h3{
+
+.Text-content h3 {
     /* estamos chamando p titulo da sessão  */
-font-size: 2rem;/*tamanho da fonte */
-font-weight: 800;/*peso da fonte */
-text-transform: uppercase;/*tornando o texto em caixa alta */
-margin-bottom: 2rem;/*margem inferior do titulo */
+    font-size: 2rem;
+    /*tamanho da fonte */
+    font-weight: 800;
+    /*peso da fonte */
+    text-transform: uppercase;
+    /*tornando o texto em caixa alta */
+    margin-bottom: 2rem;
+    /*margem inferior do titulo */
 }
+
 .Text-content P {
 
     color: rgb(66, 58, 58);
@@ -353,9 +370,10 @@ margin-bottom: 2rem;/*margem inferior do titulo */
 
 
 }
-.button-01{
 
-  width: 20rem;
+.button-01 {
+
+    width: 20rem;
     background-color: #8a8989;
     border: none;
     padding: 1rem;
@@ -365,156 +383,175 @@ margin-bottom: 2rem;/*margem inferior do titulo */
 
 
 }
-.button-div{
 
-display: flex;
-justify-content: center;
-text-align: center;
-align-items: center;
-padding: 3rem;
-border: none;
+.button-div {
 
-
-
-}
-.button-div01{
-display: flex;
-justify-content: center;
-text-align: center;
-align-items: center;
-padding: 1rem;
-border: none;
-
-
-
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 3rem;
+    border: none;
 
 
 
 }
 
-.icones{
+.button-div01 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    border: none;
 
- display: flex;
-justify-content: center;
-text-align: center;
-align-items: center;
 
-
-
-}
-.icones2{
-display: flex;
-justify-content: center;
-text-align: center;
-align-items: center;
 
 
 
 
 }
-h2{
+
+.icones {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 
 
-color: rgb(14, 14, 14);
+
+}
+
+.icones2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+
+
+
+}
+
+h2 {
+
+
+    color: rgb(14, 14, 14);
     text-align: center;
     font-size: 2rem;
     padding: 2rem;
-      
+
 
 
 }
-#texto-01{
 
-  color: rgb(68, 48, 48);
+#texto-01 {
+
+    color: rgb(68, 48, 48);
     text-align: center;
     font-size: 1.5rem;
 
 
 }
-#texto-03{
+
+#texto-03 {
 
     color: rgba(0, 0, 0, 0.74);
     text-align: center;
     font-size: 1.2rem;
-    
+
 
 
 }
-.section-04 i{
+
+.section-04 i {
     font-size: 2rem;
     margin-top: 1rem;
     margin-bottom: 0.8rem;
 }
-.imput-email{
 
- text-align: center;
-padding: 0.8rem;
-width: 23rem;
-background-color: #473030b2;
-border: none;
-color: #000000;
-margin: 1.5rem;
-
-
-
-
-}
-.SUMMIT{
-text-align: center;
-padding: 0.8rem;
-width: 8rem;
-background-color: #473535a6;
-border: none;
-margin: 1.5rem;
+.imput-email {
+    text-align: center;
+    padding: 0.8rem;
+    width: 23rem;
+    background-color: #473030b2;
+    /* fundo escuro */
+    border: none;
+    margin: 1.5rem;
+    color: #c2bcbc;
+    /* texto branco para aparecer sobre o fundo escuro */
+    font-size: 1rem;
+    border-radius: 5px;
 }
 
+input::placeholder {
+    color: #dddddd;
+    /* deixa o texto do placeholder visível também */
+}
+
+.SUMMIT {
+    text-align: center;
+    padding: 0.8rem;
+    width: 8rem;
+    background-color: #473535a6;
+    border: none;
+    margin: 1.5rem;
+}
+
+/* Footer principal */
 footer {
-    height: 24rem;
-    background-color: #7e7373;
-      display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.listas {
+    background-color: #917e7e;
     display: flex;
+    flex-direction: column; /* melhor para mobile */
     justify-content: center;
     align-items: center;
-    gap: 4rem;
-    text-align: center;
-    color: rgb(255, 249, 249);
-
-}
-
-.listas ul {
-    margin-top: 6rem;
-    
-}
-
-.listas ul li{
-    margin-top: 1rem;
-    padding: 0.2rem;
-  
+    padding: 5rem; /* altura automática e espaçamento */
    
 }
 
-hr {
-    border: solid 1px;
-    width: 60%;
-    color: #ffffff;
-    margin-left: 20%;
+/* Listas dentro do footer */
+.listas {
+    display: flex;
+    flex-wrap: wrap; /* permite quebrar linha em telas pequenas */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem; /* menor gap em mobile */
+    text-align: center;
+    color: rgb(3, 3, 3);
     margin-top: 2rem;
 }
 
+.listas ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.listas ul li {
+    margin-top: 0.5rem;
+    padding: 0.2rem;
+}
+
+/* Linha horizontal */
+hr {
+    border: solid 1px #000000;
+    width: 80%;
+    margin: 2rem auto 0 auto;
+}
+
+/* Ícones do footer */
 .icones-footer {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
     gap: 1rem;
-    color: white; 
+    color: rgb(0, 0, 0);
 }
 
 .icones-footer i {
     font-size: 2.4rem;
 }
+
+
