@@ -1,45 +1,62 @@
+/* Formatação Global da Página*/
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-family: "DM Serif Text", serif;
-
+  /* resetando os espaçamentos/preenchiementos */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "DM Serif Text", serif;
 }
 
 header {
+  background-color: #D8D8C0;
+  /*cor de fundo*/
+  padding: 2rem;
+  /* preenchimento interno = 32px*/
 
-    background-color: #d8d8c0;
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
-    /* separa logo e menu */
-    align-items: center;
-    position: sticky;
-    left: 0;
-    top: 0;
-    z-index: 999;
+  /* propreidades de alinhamento */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 
-
+  /* header fixo */
+  position: sticky;
+  /*posicionamento fixo do header*/
+  left: 0;
+  /*zerando a esquerda*/
+  top: 0;
+  /*zerando ao topo*/
+  z-index: 999;
+  /*eixo cartesiano/profundidade*/
 }
 
+/* ESTILIZAÇÃO DA LOGO */
 .logojk {
-    width: 10rem;
-    height: auto;
+  width: 8rem;
+  /*largura responsiva da img*/
+  height: auto;
+  /*o auto servirá como uma altura automática em relação a tela o navegador*/
 }
 
 .ul-list {
-    display: flex;
-    gap: 8rem;
-
-
-
+  /*aplicando formatação na UL*/
+  display: flex;
+  /*colocando as LI lado a lado*/
+  gap: 10px;
+  /*espaçamento entre as listas*/
 }
 
-.ul-list a {
-    text-decoration: none;
-    color: black;
-
+.ul-list li a {
+  /*removendo a estilização padrão da âncora*/
+  text-decoration: none;
+  color: black;
+  padding: 0.8rem;
 }
+
+.ul-list li a:hover {
+  transition: 0.8s;
+  border-bottom: 2px solid black;
+}
+
 
 .section-01 {
     background-image: url(imagem/dektop.png);
@@ -182,10 +199,73 @@ header {
 
 
 }
+/* ---------------------------------------- */
+/* MENU MOBILE */
+/* Ícone do menu (hambúrguer) */
+.menu-btn {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none; /* só aparece no mobile */
+}
+.nav-menu {
+  display: none;
+
+}
+/* ---------------------------------- */
+.menu-desktop {
+    /* Aqui estamos ocultando o menu para versões MOBILE */
+    display: none;
+    /*Responsável por ocultar o menu ou qualquer outra propriedade*/
+  }
+
+  .menu-btn {
+    display: block;
+    /*tornando o menuHamburger Visível*/
+    margin-right: -3rem; /*posicionamento do menu*/
+  }
+
+
+/* -------------------------------------------- */
+@media (max-width:500px){
+
+    /* menu vertical */
+
+.nav-menu{
+position: absolute;
+top:-30rem;/*comeca escodido acima*/
+left:-2rem;/*ajustado o alinhamento do menu*/
+width:100%;/*largura total da caixa do menu*/
+height: 30vh;/*altura da caixa do menu */
+background-color: #D8D8C0;/**/
+transition: top 0.3s ease-in-out;/*trasição suave*/
+display: flex;/*alinhamento dos itens */
+justify-content: center;/*alinhamento horizontal */
+align-items: center;/*alinhamento vertical */
+
+}
+
+.show { /*essa class sera usada pelo javascript para ação do menu*/
+top:90px;/*desce suavemente quando e ativado */
+left:-2rem;/*posicionamento do menu */
+
+
+
+}
+
+
+
+
+
+
+
+}
+
+
+
 
 @media (max-width: 500px) {
     header {
-        background-color: rgba(80, 63, 62, 0.904);
+        background-color: rgba(119, 103, 102, 0.904);
         padding: 1rem;
     }
 }
@@ -485,8 +565,8 @@ h2 {
     border-radius: 5px;
 }
 
-input::placeholder {
-    color: #dddddd;
+input{
+    color: #000000;
     /* deixa o texto do placeholder visível também */
 }
 
