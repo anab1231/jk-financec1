@@ -10,7 +10,7 @@
 header {
   background-color: #D8D8C0;
   /*cor de fundo*/
-  padding: 2rem;
+  padding: 1rem;
   /* preenchimento interno = 32px*/
 
   /* propreidades de alinhamento */
@@ -199,87 +199,107 @@ header {
 
 
 }
-/* ---------------------------------------- */
-/* MENU MOBILE */
-/* Ícone do menu (hambúrguer) */
-.menu-btn {
-  font-size: 2rem;
-  cursor: pointer;
-  display: none; /* só aparece no mobile */
-}
-.nav-menu {
-  display: none;
+@media (max-width: 500px) {
 
-}
-/* ---------------------------------- */
-.menu-desktop {
-    /* Aqui estamos ocultando o menu para versões MOBILE */
+  header {
+    padding: 1rem;
+    margin-right: -5rem;
+    /*correção menu navBar*/
+    justify-content: space-between;
+  }
+
+  .logo-JK{
+    width: 6rem;
+    margin-left: 3rem;
+  }
+
+
+  .section-01 {
+    background-image: url(imagem/TABLET.jpg); /*trocando a img para telas menores*/
+    padding: 8rem; /*diminuindo o preenchimento da section*/
+
+  }
+
+  /* Centraliza tudo dentro da section-02 */
+  .section-02 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 1rem; /*primeiro valor é o padding superior/inferior
+    segundo valor é o padding left/right*/
+  }
+
+  /* Centraliza o texto do título e parágrafo */
+  .text-content h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  /* Faz as caixas ficarem uma embaixo da outra e centralizadas */
+  .pai-caixas {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .texto-caixa p {
+    font-size: 1rem;
+  }
+
+  .texto-caixa button {
+    width: 100%;
+    max-width: 10rem;
+    margin-top: 1rem;
+  }
+  
+
+  .menu-desktop {
+    /* Aqui estamos ocultando o menu DESKTOP para versões MOBILE */
     display: none;
     /*Responsável por ocultar o menu ou qualquer outra propriedade*/
   }
 
   .menu-btn {
-    display: block;
-    /*tornando o menuHamburger Visível*/
-    margin-right: -3rem; /*posicionamento do menu*/
+    display: flex; /*tornando o menuHamburger Visível*/
+    margin-right: -3rem;/*posicionamento do menu*/
   }
 
+/* MENU VERTICAL */
+  .nav-menu {
+    position:absolute;
+    top: -30rem; /* começa escondido acima */
+    left: -2rem; /*ajustando o alinhamento do menu*/
+    width: 100%; /*largura total da caixa do menu*/
+    height: 30vh;/*altura da caixa do menu*/
+    background-color: #D8D8C0;
+    transition: top 0.3s ease-in-out;/* transição suave */
+    display: flex; /*alinhamento dos itens*/
+    justify-content: center;/*alinhamento horizontal*/
+    align-items: center; /*alinhamento vertical*/
+  }
+   .show { /*essa class será usada pelo JavaScript para ação do menu*/
+    top: 90px; /* desce suavemente quando é ativado */
+    left: -2rem; /*posicionamento do menu*/
+  }
 
-/* -------------------------------------------- */
-@media (max-width:500px){
+  .ul-list2 {
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem 0;
+  }
 
-    /* menu vertical */
+  
 
-.nav-menu{
-position: absolute;
-top:-30rem;/*comeca escodido acima*/
-left:-2rem;/*ajustado o alinhamento do menu*/
-width:100%;/*largura total da caixa do menu*/
-height: 30vh;/*altura da caixa do menu */
-background-color: #D8D8C0;/**/
-transition: top 0.3s ease-in-out;/*trasição suave*/
-display: flex;/*alinhamento dos itens */
-justify-content: center;/*alinhamento horizontal */
-align-items: center;/*alinhamento vertical */
-
-}
-
-.show { /*essa class sera usada pelo javascript para ação do menu*/
-top:90px;/*desce suavemente quando e ativado */
-left:-2rem;/*posicionamento do menu */
-
-
-
-}
-
-
-
-
-
-
-
-}
-
-
-
-
-@media (max-width: 500px) {
-    header {
-        background-color: rgba(119, 103, 102, 0.904);
-        padding: 1rem;
-    }
-}
-
-@media (max-width:500px) {
-
-    .section-01 {
-        background-image: url(imagem/mobile.jpg);
-        padding: 10rem;
-    }
-
-    nav {
-        display: none;
-    }
 }
 
 .section-03 {
@@ -581,7 +601,7 @@ input{
 
 /* Footer principal */
 footer {
-    background-color: #917e7e;
+    background-color: #3f3b3b;
     display: flex;
     flex-direction: column; /* melhor para mobile */
     justify-content: center;
